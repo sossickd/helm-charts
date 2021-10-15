@@ -4,16 +4,16 @@
 
 ## Installing the Chart
 
-Before you can install the chart you will need to add the `sossickd` repo to [Helm](https://helm.sh/).
+Before you can install the chart you will need to add the `stevehipwell` repo to [Helm](https://helm.sh/).
 
 ```shell
-helm repo add sossickd https://sossickd.github.io/helm-charts/
+helm repo add stevehipwell https://stevehipwell.github.io/helm-charts/
 ```
 
 After you've installed the repo you can install the chart.
 
 ```shell
-helm upgrade --install sossickd/external-dns
+helm upgrade --install stevehipwell/external-dns
 ```
 
 ## Configuration

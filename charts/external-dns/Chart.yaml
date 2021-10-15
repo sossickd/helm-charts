@@ -12,5 +12,5 @@ home: https://github.com/kubernetes-sigs/external-dns/
 icon: https://github.com/kubernetes-sigs/external-dns/raw/master/img/external-dns.png
 sources:
   - https://github.com/kubernetes-sigs/external-dns/
-  - https://github.com/sossickd/helm-charts/
+  - https://github.com/stevehipwell/helm-charts/
 deprecated: true
