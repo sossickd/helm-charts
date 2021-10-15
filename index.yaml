@@ -3,12 +3,23 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-10-15T12:08:23.04138+01:00"
+    created: "2021-10-15T14:06:21.057537+01:00"
     description: A Helm chart for Kubernetes
-    digest: eef4a9c932d692d5009034af7296a9ece907ef5bd66bbf79cef5a4f61c6b0fe3
+    digest: f70c9fc22e56b6e55ef155d49c856d226b78ce0dba12882b22aba9004773da82
     name: helm-chart-test
     type: application
     urls:
     - https://sossickd.github.io/helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-10-15T12:08:23.038275+01:00"
+  php-guest-book:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-10-15T14:06:21.058332+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 3ed6f1e17f2e07951ac17639953cf227cc5219ce309c27a4ecf2399c487c18d6
+    name: php-guest-book
+    type: application
+    urls:
+    - https://sossickd.github.io/helm-chart/php-guest-book-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-10-15T14:06:21.055822+01:00"
