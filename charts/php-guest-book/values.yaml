@@ -24,7 +24,7 @@ serviceAccount:
   annotations: {}
   # If not set and create is true, a name is generated using the fullname template
   # -- The name of the service account to use.
-  name: frontend
+  name: ""
 
 # -- Annotations to add to the pod.
 podAnnotations: {}
