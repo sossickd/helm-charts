@@ -62,5 +62,5 @@ helm upgrade --install --namespace default --values ./my-values.yaml my-release 
 | service.type | string | `"ClusterIP"` | Service type. |
 | serviceAccount.annotations | object | `{}` | Annotations to add to the service account. |
 | serviceAccount.create | bool | `true` | Specifies whether a service account should be created. |
-| serviceAccount.name | string | `"frontend"` |  |
+| serviceAccount.name | string | `""` |  |
 | tolerations | list | `[]` | Tolerations for pod assignment. |
