@@ -15,6 +15,6 @@ entries:
     name: php-guest-book
     type: application
     urls:
-    - https://sossickd.github.io/helm-chart/php-guest-book-1.0.0.tgz
+    - https://github.com/sossickd/helm-charts/releases/download/php-guest-book-1.0.0/php-guest-book-1.0.0.tgz
     version: 1.0.0
 generated: "2021-10-16T16:21:47.389804+01:00"
