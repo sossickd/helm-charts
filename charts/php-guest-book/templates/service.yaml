@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ include "php-guest-book.fullname" . }}
   labels:
-    {{- include "php-guest-book.labels" . | nindent 4 }}
+    {{ include "php-guest-book.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:

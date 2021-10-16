@@ -1,25 +1,20 @@
 apiVersion: v1
 entries:
-  helm-chart-test:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-10-15T14:06:21.057537+01:00"
-    description: A Helm chart for Kubernetes
-    digest: f70c9fc22e56b6e55ef155d49c856d226b78ce0dba12882b22aba9004773da82
-    name: helm-chart-test
-    type: application
-    urls:
-    - https://sossickd.github.io/helm-chart/helm-chart-test-0.1.0.tgz
-    version: 0.1.0
   php-guest-book:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-10-15T14:06:21.058332+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 3ed6f1e17f2e07951ac17639953cf227cc5219ce309c27a4ecf2399c487c18d6
+    appVersion: 5.0.0
+    created: "2021-10-16T14:41:15.274735+01:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.4.*
+    description: A Helm chart for Kubernetes that deploys the php guest book
+    digest: 7515efee7809a9914e8e964d5bf9cbf8b4eb7a621b104a46616e909a950ee511
+    icon: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
     name: php-guest-book
     type: application
     urls:
-    - https://sossickd.github.io/helm-chart/php-guest-book-0.1.0.tgz
+    - https://sossickd.github.io/helm-chart/external-dns/php-guest-book-0.1.0.tgz
     version: 0.1.0
-generated: "2021-10-15T14:06:21.055822+01:00"
+generated: "2021-10-16T14:41:15.241606+01:00"
