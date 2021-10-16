@@ -2,7 +2,7 @@ apiVersion: v2
 name: php-guest-book
 description: A Helm chart for Kubernetes that deploys the php guest book
 type: application
-version: 0.1.0
+version: 0.1.1
 icon: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
 appVersion: "5.0.0"
 
