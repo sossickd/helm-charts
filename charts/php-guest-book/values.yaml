@@ -1,34 +1,39 @@
-# Default values for php-guest-book.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
-
+# -- Override the name of the chart.
 nameOverride: ""
+# -- Override the fullname of the chart.
 fullnameOverride: ""
 
+# -- Replica count.
 replicaCount: 1
 
 image:
+  # -- Image repository.
   repository: gcr.io/google-samples/gb-frontend
+  # -- Image pull policy.
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
+  # -- Image tag.
   tag: v5
 
+# -- Image pull secrets.
 imagePullSecrets: []
 
 serviceAccount:
-  # Specifies whether a service account should be created
+  # -- Specifies whether a service account should be created.
   create: true
-  # Annotations to add to the service account
+  # -- Annotations to add to the service account.
   annotations: {}
-  # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
+  # -- The name of the service account to use.
   name: frontend
 
+# -- Annotations to add to the pod.
 podAnnotations: {}
 
+# -- Security context for the pod.
 podSecurityContext: {}
   # fsGroup: 2000
 
+# -- Security context for the confluence container.
 securityContext: {}
   # capabilities:
   #   drop:
@@ -37,26 +42,35 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+
 service:
+  # -- Service type.
   type: ClusterIP
+  # -- Service port.
   port: 80
 
 ingress:
+  # -- If true, create an ingress object.
   enabled: false
+  # -- Ingress class to use.
   ingressClassName: ""
+  # -- Ingress annotations.
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
+  # -- Ingress hosts.
   hosts:
     - host: chart-example.local
       paths:
         - path: /
           pathType: ImplementationSpecific
+  # -- Ingress TLS configuration
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
 
+# -- Resource requests and limits.
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
@@ -70,29 +84,43 @@ resources: {}
   #   memory: 128Mi
 
 autoscaling:
+  # -- If true, create a HPA for the deployment.
   enabled: false
+  # -- Minimum number of pod replicas.
   minReplicas: 1
+  # -- Maximum number of pod replicas.
   maxReplicas: 100
+  # -- Target CPU utilisation for the pod.
   targetCPUUtilizationPercentage: 80
+  # -- Target memory utilisation for the pod.
   targetMemoryUtilizationPercentage: 80
 
+# -- Node labels for pod assignment.
 nodeSelector: {}
 
+# -- Tolerations for pod assignment.
 tolerations: []
 
+# -- Affinity for pod assignment.
 affinity: {}
 
+
 redis:
+  # -- If `true`, deploys redis, this is a requiremenrt for the php-guest-book.
   enabled: true
 
   auth:
+    # -- If `false`, disables redis auth, this is a requiremenrt for the php-guest-book.
     enabled: false
 
   master:
     persistence:
+      # -- If `true` enable persistence storage for the redis master.
       enabled: false
 
   replica:
+    # -- Reddis replica, replica count.
     replicaCount: 2
     persistence:
+      # -- If `true` enable persistence storage for the redis replica.
       enabled: false
