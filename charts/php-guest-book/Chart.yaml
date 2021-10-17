@@ -1,7 +1,6 @@
 apiVersion: v2
 name: php-guest-book
-description: A Helm chart for Kubernetes that deploys the php guest book. A simple, multi-tier PHP-based web application that uses redis chart.
-type: application
+description: A Helm chart for the php guest book.
 version: 0.1.0
 appVersion: "5.0.0"
 home: https://github.com/kubernetes/examples/tree/master/guestbook
@@ -11,8 +10,8 @@ keywords:
   - guestbook
   - redis
 sources:
-  - https://github.com/sossickd/helm-charts
   - https://github.com/ananware-systems/guestbook-helm
+  - https://github.com/sossickd/helm-charts
 maintainers:
   - name: sossickd
     email: daniel.sossick@rbi.co.uk
