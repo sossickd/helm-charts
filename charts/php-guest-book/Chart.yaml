@@ -3,11 +3,23 @@ name: php-guest-book
 description: A Helm chart for Kubernetes that deploys the php guest book
 type: application
 version: 0.1.1
-icon: http://clipart-library.com/images_k/php-logo-transparent/php-logo-transparent-17.png
 appVersion: "5.0.0"
-
+icon: http://clipart-library.com/images_k/php-logo-transparent/php-logo-transparent-17.png
+keywords:
+  - php
+  - guestbook
+  - redis
+sources:
+  - https://github.com/ananware-systems/guestbook-helm
+maintainers:
+  - name: sossickd
+    email: daniel.sossick@rbi.co.uk
 dependencies:
 - name: redis
   version: "15.4.*"
   repository: https://charts.bitnami.com/bitnami
   condition: redis.enabled
+annotations:
+  artifacthub.io/changes: |
+    - kind: changed
+      description: "Update chart version to 0.1.1 as a test"
