@@ -89,11 +89,11 @@ autoscaling:
   # -- Minimum number of pod replicas.
   minReplicas: 1
   # -- Maximum number of pod replicas.
-  maxReplicas: 100
+  maxReplicas: 10
   # -- Target CPU utilisation for the pod.
-  targetCPUUtilizationPercentage: 80
+  targetCPUUtilizationPercentage: 50
   # -- Target memory utilisation for the pod.
-  targetMemoryUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 50
 
 # -- Node labels for pod assignment.
 nodeSelector: {}

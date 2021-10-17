@@ -2,8 +2,8 @@ apiVersion: v2
 name: php-guest-book
 description: A Helm chart for Kubernetes that deploys the php guest book
 type: application
-version: 1.0.1
-icon: https://icons.iconarchive.com/icons/icons8/ios7/64/Programming-Php-icon.png
+version: 0.1.0
+icon: https://github.com/sossickd/icons/blob/icons/php/develop_language_php_icon.png
 appVersion: "5.0.0"
 
 dependencies:
