@@ -1,11 +1,11 @@
 apiVersion: v1
 entries:
   php-guest-book:
-  - annotations:
+  - apiVersion: v2
+    annotations:
       artifacthub.io/changes: |
         - kind: changed
           description: "Update test"
-    apiVersion: v2
     appVersion: 5.0.0
     created: "2021-10-17T18:55:58.195434+01:00"
     dependencies:
