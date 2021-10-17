@@ -1,8 +1,14 @@
 # php-guest-book
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 5.0.0](https://img.shields.io/badge/AppVersion-5.0.0-informational?style=flat-square)
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 5.0.0](https://img.shields.io/badge/AppVersion-5.0.0-informational?style=flat-square)
 
-A Helm chart for Kubernetes that deploys the php guest book
+[php-guest-book](https://github.com/kubernetes/examples/tree/master/guestbook) is a simple, multi-tier PHP-based web application that uses redis chart.
+
+## Introduction
+
+This chart bootstraps a [guestbook](https://github.com/kubernetes/examples/tree/master/guestbook) deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+
+It also packages the [Bitnami Redis chart](https://github.com/bitnami/charts/tree/master/bitnami/redis) which is required for bootstrapping a Redis deployment for the caching requirements of the guestbook application.
 
 ## Installing the Chart
 
@@ -41,9 +47,9 @@ helm upgrade --install --namespace default --values ./my-values.yaml my-release 
 | imagePullSecrets | list | `[]` | Image pull secrets. |
 | ingress.annotations | object | `{}` | Ingress annotations. |
 | ingress.enabled | bool | `false` | If true, create an ingress object. |
-| ingress.hosts[0].host | string | `"chart-example.local"` |  |
-| ingress.hosts[0].paths[0].path | string | `"/"` |  |
-| ingress.hosts[0].paths[0].pathType | string | `"ImplementationSpecific"` |  |
+| ingress.hosts[0].host | string | `"chart-example.local"` | Ingress hostname. |
+| ingress.hosts[0].paths[0].path | string | `"/"` | Ingress path. |
+| ingress.hosts[0].paths[0].pathType | string | `"ImplementationSpecific"` | Ingress pathType |
 | ingress.ingressClassName | string | `""` | Ingress class to use. |
 | ingress.tls | list | `[]` | Ingress TLS configuration |
 | nameOverride | string | `""` | Override the name of the chart. |
