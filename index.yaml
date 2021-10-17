@@ -7,15 +7,14 @@ entries:
           description: "New chart version 0.1.0"
     apiVersion: v2
     appVersion: 5.0.0
-    created: "2021-10-17T20:20:14.301064+01:00"
+    created: "2021-10-17T20:58:02.888471+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
       repository: https://charts.bitnami.com/bitnami
       version: 15.4.*
-    description: A Helm chart for Kubernetes that deploys the php guest book. A simple,
-      multi-tier PHP-based web application that uses redis chart.
-    digest: c741371a55bde1c3543caea029ca9c9192704f035eefc1ec241087a3f1296312
+    description: A Helm chart for the php guest book.
+    digest: c8b9216a560500a4408c87913164e8cb31555422e5a87b5c11cd0a1706db2e00
     home: https://github.com/kubernetes/examples/tree/master/guestbook
     icon: http://clipart-library.com/images_k/php-logo-transparent/php-logo-transparent-17.png
     keywords:
@@ -27,10 +26,9 @@ entries:
       name: sossickd
     name: php-guest-book
     sources:
-    - https://github.com/sossickd/helm-charts
     - https://github.com/ananware-systems/guestbook-helm
-    type: application
+    - https://github.com/sossickd/helm-charts
     urls:
     - https://github.com/sossickd/helm-charts/releases/download/php-guest-book-0.1.0/php-guest-book-0.1.0.tgz
     version: 0.1.0
-generated: "2021-10-17T20:20:14.29515+01:00"
+generated: "2021-10-17T20:58:02.881949+01:00"
