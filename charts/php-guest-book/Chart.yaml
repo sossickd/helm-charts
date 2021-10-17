@@ -3,7 +3,7 @@ name: php-guest-book
 description: A Helm chart for Kubernetes that deploys the php guest book
 type: application
 version: 1.0.1
-icon: https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png
+icon: https://icons.iconarchive.com/icons/icons8/ios7/64/Programming-Php-icon.png
 appVersion: "5.0.0"
 
 dependencies:
