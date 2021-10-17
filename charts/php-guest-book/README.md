@@ -1,6 +1,6 @@
 # php-guest-book
 
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 5.0.0](https://img.shields.io/badge/AppVersion-5.0.0-informational?style=flat-square)
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 5.0.0](https://img.shields.io/badge/AppVersion-5.0.0-informational?style=flat-square)
 
 [php-guest-book](https://github.com/kubernetes/examples/tree/master/guestbook) is a simple, multi-tier PHP-based web application that uses redis chart.
 
@@ -8,7 +8,7 @@
 
 This chart bootstraps a [guestbook](https://github.com/kubernetes/examples/tree/master/guestbook) deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
-It also packages the [Bitnami Redis chart](https://github.com/bitnami/charts/tree/master/bitnami/redis) which is required for bootstrapping a Redis deployment for the caching requirements of the guestbook application.
+This chart has a dependency on the [Bitnami Redis chart](https://github.com/bitnami/charts/tree/master/bitnami/redis) which is required for bootstrapping a Redis deployment for the caching requirements of the guestbook application.
 
 ## Installing the Chart
 
@@ -23,12 +23,6 @@ After you've installed the repo you can install the chart.
 ```shell
 helm upgrade --install --namespace default --values ./my-values.yaml my-release sossickd/php-guest-book
 ```
-
-## Requirements
-
-| Repository | Name | Version |
-|------------|------|---------|
-| https://charts.bitnami.com/bitnami | redis | 15.4.* |
 
 ## Configuration
 
