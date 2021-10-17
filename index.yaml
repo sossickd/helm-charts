@@ -4,17 +4,17 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
-          description: "New chart version 0.1.1"
+          description: "New chart version 0.0.9"
     apiVersion: v2
     appVersion: 5.0.0
-    created: "2021-10-17T21:47:19.25716+01:00"
+    created: "2021-10-17T22:21:16.360363+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
       repository: https://charts.bitnami.com/bitnami
       version: 15.4.*
     description: A Helm chart for the php guest book.
-    digest: 65d9ef18a88d77ba9ec60a2e74a8f5119dc17aba390737efd04faa73d5c96328
+    digest: 20ba424df79d7d8436e52a6defd521efe4dad91363b7a052ce598c9f34116d6b
     home: https://github.com/kubernetes/examples/tree/master/guestbook
     icon: http://clipart-library.com/images_k/php-logo-transparent/php-logo-transparent-17.png
     keywords:
@@ -29,6 +29,6 @@ entries:
     - https://github.com/ananware-systems/guestbook-helm
     - https://github.com/sossickd/helm-charts
     urls:
-    - https://github.com/sossickd/helm-charts/releases/download/php-guest-book-0.1.0/php-guest-book-0.1.1.tgz
-    version: 0.1.1
-generated: "2021-10-17T21:47:19.251437+01:00"
+    - https://github.com/sossickd/helm-charts/releases/download/php-guest-book-0.0.9/php-guest-book-0.0.9.tgz
+    version: 0.0.9
+generated: "2021-10-17T22:21:16.353772+01:00"
