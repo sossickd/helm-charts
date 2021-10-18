@@ -4,36 +4,6 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
-          description: "Test new chart version 0.1.1"
-    apiVersion: v2
-    appVersion: 5.0.0
-    created: "2021-10-18T10:05:35.284102022Z"
-    dependencies:
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: 15.4.*
-    description: A Helm chart for the php guest book.
-    digest: da9766eb02adc96e7b5d7d8f3355119954a1f47b6d5a32646a4eb02789ca2499
-    home: https://github.com/kubernetes/examples/tree/master/guestbook
-    icon: http://clipart-library.com/images_k/php-logo-transparent/php-logo-transparent-17.png
-    keywords:
-    - php
-    - guestbook
-    - redis
-    maintainers:
-    - email: daniel.sossick@rbi.co.uk
-      name: sossickd
-    name: php-guest-book
-    sources:
-    - https://github.com/ananware-systems/guestbook-helm
-    - https://github.com/sossickd/helm-charts
-    urls:
-    - https://github.com/sossickd/helm-charts/releases/download/php-guest-book-0.1.1/php-guest-book-0.1.1.tgz
-    version: 0.1.1
-  - annotations:
-      artifacthub.io/changes: |
-        - kind: changed
           description: "New chart version 0.1.0"
     apiVersion: v2
     appVersion: 5.0.0
