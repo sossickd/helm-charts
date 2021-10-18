@@ -1,7 +1,7 @@
 apiVersion: v2
 name: php-guest-book
 description: A Helm chart for the php guest book.
-version: 0.1.1
+version: 0.0.9
 appVersion: "5.0.0"
 home: https://github.com/kubernetes/examples/tree/master/guestbook
 icon: http://clipart-library.com/images_k/php-logo-transparent/php-logo-transparent-17.png
@@ -23,4 +23,4 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: "Test new chart version 0.1.1"
+      description: "Test new chart version 0.0.9"

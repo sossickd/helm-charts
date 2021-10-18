@@ -33,7 +33,7 @@ podAnnotations: {}
 podSecurityContext: {}
   # fsGroup: 2000
 
-# -- Security context for the confluence container.
+# -- Security context for the container.
 securityContext: {}
   # capabilities:
   #   drop:
@@ -106,11 +106,11 @@ affinity: {}
 
 
 redis:
-  # -- If `true`, deploys redis, this is a requiremenrt for the php-guest-book.
+  # -- If `true`, deploys redis, this is a requirement for the php-guest-book.
   enabled: true
 
   auth:
-    # -- If `false`, disables redis auth, this is a requiremenrt for the php-guest-book.
+    # -- If `false`, disables redis auth, this is a requirement for the php-guest-book.
     enabled: false
 
   master:
@@ -119,7 +119,7 @@ redis:
       enabled: false
 
   replica:
-    # -- Reddis replica, replica count.
+    # -- Redis replica, replica count.
     replicaCount: 2
     persistence:
       # -- If `true` enable persistence storage for the redis replica.
